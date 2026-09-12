@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What are the main components of a RAG model, and how do they interact?",
+        "expected_topic": "RAG architecture, retriever + generator components"
+    },
+    {
+        "question": "What are the two sub-layers in each encoder layer of the Transformer model?",
+        "expected_topic": "multi-head self-attention and feed-forward network"
+    },
+    {
+        "question": "Explain how positional encoding is implemented in Transformers and why it is necessary.",
+        "expected_topic": "sine/cosine positional encoding, necessity due to lack of recurrence"
+    },
+    {
+        "question": "Describe the concept of multi-head attention in the Transformer architecture. Why is it beneficial?",
+        "expected_topic": "multiple attention heads, parallel subspaces"
+    },
+    {
+        "question": "What is few-shot learning, and how does GPT-3 implement it during inference?",
+        "expected_topic": "few-shot learning via in-context examples, no gradient updates"
+    },
+    {
+        "question": "What is retrieval collapse in RAG models?",
+        "expected_topic": "retriever ignoring input, retrieving same documents regardless of query"
+    },
+    {
+        "question": "How does GPT-3's model size affect its few-shot performance?",
+        "expected_topic": "larger models show better few-shot performance"
+    },
+    {
+        "question": "What is the purpose of layer normalization in the Transformer?",
+        "expected_topic": "stabilizing training, normalizing sub-layer outputs"
+    },
+    {
+        "question": "What datasets were used to train GPT-3?",
+        "expected_topic": "Common Crawl, WebText2, Books, Wikipedia"
+    },
+    {
+        "question": "How does RAG differ from a purely parametric language model?",
+        "expected_topic": "non-parametric memory via retrieval vs. only learned weights"
+    }
+]

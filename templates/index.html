@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Paper QA System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Research Paper QA System</h1>
+        <a href="/reset" class="reset-link">Reset Conversation</a>
+
+        <form method="POST" action="/ask">
+            <input type="text" name="question" placeholder="Ask a question about the papers...">
+            <button type="submit">Ask</button>
+        </form>
+
+        {% if chat_history %}
+            <h2>Conversation</h2>
+            {% for turn in chat_history %}
+                <div class="turn">
+                    <div class="question">You: {{ turn.question }}</div>
+                    <div class="answer">{{ turn.answer }}</div>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        {% if sources %}
+            <div class="sources-box">
+                <h3>Sources for latest answer</h3>
+                <ul>
+                {% for source in sources %}
+                    <li>{{ source }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

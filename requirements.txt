@@ -1,0 +1,8 @@
+pymupdf
+tiktoken
+sentence-transformers
+chromadb
+rank_bm25
+openai
+flask
+python-dotenv
